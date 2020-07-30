@@ -1,0 +1,16 @@
+<nz-table #refTable [nzData]="$dataSource | async">
+  <thead>
+  <tr>
+    <th>STT</th>
+    <th>Tên MA</th>
+    <th>Thao tác</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let dataItem of refTable.data; index as i;">
+    <td> {{i + 1}}</td> -++
+    <td>{{dataItem.ten}}</td>
+    <td></td>
+  </tr>
+  </tbody>
+</nz-table>

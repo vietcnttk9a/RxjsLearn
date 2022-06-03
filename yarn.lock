@@ -127,6 +127,13 @@
   dependencies:
     tslib "^2.0.0"
 
+"@angular/cdk@^9.0.0":
+  version "9.2.4"
+  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-9.2.4.tgz#8413958bd275e4c34be3b96f56444671dd30ba93"
+  integrity sha512-iw2+qHMXHYVC6K/fttHeNHIieSKiTEodVutZoOEcBu9rmRTGbLB26V/CRsfIRmA1RBk+uFYWc6UQZnMC3RdnJQ==
+  optionalDependencies:
+    parse5 "^5.0.0"
+
 "@angular/cli@~10.0.3":
   version "10.0.4"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-10.0.4.tgz#5c13500f3135e43b9e6e53534fdfbc283abb83cc"
@@ -196,10 +203,10 @@
   resolved "https://registry.yarnpkg.com/@angular/core/-/core-9.0.0.tgz#227dc53e1ac81824f998c6e76000b7efc522641e"
   integrity sha512-6Pxgsrf0qF9iFFqmIcWmjJGkkCaCm6V5QNnxMy2KloO3SDq6QuMVRbN9RtC8Urmo25LP+eZ6ZgYqFYpdD8Hd9w==
 
-"@angular/core@~10.0.4":
-  version "10.0.6"
-  resolved "https://registry.yarnpkg.com/@angular/core/-/core-10.0.6.tgz#91feaa070a65db22cf8eb65523351b653ce80d2a"
-  integrity sha512-mk/7XmZg7EeWEgl2UEyhyU6eukm2h+Thw1Ue84aBxMDaqt1RUpsPwpGCfIRfzH9gdzAjJUAPxiHAN2CF+3Wohw==
+"@angular/core@~11.0.5":
+  version "11.0.5"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-11.0.5.tgz#b8c448c3cd4f6dae7327cc1ba4ee2aa29c8dbc26"
+  integrity sha512-XAXWQi7R3ucZXQwx9QK5jSKJeQyRJ53u2dQDpr7R5stzeCy1a5hrNOkZLg9zOTTPcth/6+FrOrRZP9SMdxtw3w==
   dependencies:
     tslib "^2.0.0"
 
@@ -230,6 +237,20 @@
   integrity sha512-+5c/1KitUeMHd7FPAKJ25aloouFHEjlPe5KKGJFtkuzZ7SOi3zwF3ASR52ysnGs/YymdBakIY8kg1Do00xn2wA==
   dependencies:
     tslib "^2.0.0"
+
+"@ant-design/colors@^3.1.0":
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/@ant-design/colors/-/colors-3.2.2.tgz#5ad43d619e911f3488ebac303d606e66a8423903"
+  integrity sha512-YKgNbG2dlzqMhA9NtI3/pbY16m3Yl/EeWBRa+lB1X1YaYxHrxNexiQYCLTWO/uDvAjLFMEDU+zR901waBtMtjQ==
+  dependencies:
+    tinycolor2 "^1.4.1"
+
+"@ant-design/icons-angular@^9.0.0":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@ant-design/icons-angular/-/icons-angular-9.0.1.tgz#5ac8bec5bc34d23120820c93f8511b59aa117bc5"
+  integrity sha512-bWdHOmO4LSQ3wpmivwTI7EWiRUMGSVA+fyfiGZ9IrQqoccg9XjGcWqT/VA9A45OV0QTKweo4hp3xaTzRBKsc+g==
+  dependencies:
+    "@ant-design/colors" "^3.1.0"
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.8.3":
   version "7.10.4"
@@ -2904,6 +2925,11 @@ data-urls@^2.0.0:
     abab "^2.0.3"
     whatwg-mimetype "^2.3.0"
     whatwg-url "^8.0.0"
+
+date-fns@^2.10.0:
+  version "2.28.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.28.0.tgz#9570d656f5fc13143e50c975a3b6bbeb46cd08b2"
+  integrity sha512-8d35hViGYx/QH0icHYCeLmsLmMUheMmTyV9Fcm6gvNwdw31yXXH+O85sOBJ+OLnLQMKZowvpKb6FgMIQjcpvQw==
 
 date-format@^2.1.0:
   version "2.1.0"
@@ -5626,6 +5652,17 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
+ng-zorro-antd@^9.3.0:
+  version "9.3.0"
+  resolved "https://registry.yarnpkg.com/ng-zorro-antd/-/ng-zorro-antd-9.3.0.tgz#f80dbe2715e578c475728773449442f0099f152c"
+  integrity sha512-O7uRCnsFTGHn/74ly8VCUoaMlED3cWLJfvbD0FLzDjBlnz77kcuM5qd+yGMT2hAYXmXYWu2ZRRJWLx5QUGLHkA==
+  dependencies:
+    "@angular/cdk" "^9.0.0"
+    "@ant-design/icons-angular" "^9.0.0"
+    date-fns "^2.10.0"
+    resize-observer-polyfill "^1.5.1"
+    tslib "^1.10.0"
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
@@ -6128,6 +6165,11 @@ parse5@4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-4.0.0.tgz#6d78656e3da8d78b4ec0b906f7c08ef1dfe3f608"
   integrity sha512-VrZ7eOd3T1Fk4XWNXMgiGBK/z0MG48BWG2uQNU4I72fkQuKUTZpl+u9k+CxEG0twMVzSmXEEz12z5Fnw1jIQFA==
+
+parse5@^5.0.0:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/parse5/-/parse5-5.1.1.tgz#f68e4e5ba1852ac2cadc00f4555fff6c2abb6178"
+  integrity sha512-ugq4DFI0Ptb+WWjAdOK16+u/nHfiIrcE+sh8kZMaM0WllQKLI9rOUq6c2b7cwPkXdzfQESqvoqK6ug7U/Yyzug==
 
 parseqs@0.0.5:
   version "0.0.5"
@@ -7066,6 +7108,11 @@ requires-port@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
+
+resize-observer-polyfill@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz#0e9020dd3d21024458d4ebd27e23e40269810464"
+  integrity sha512-LwZrotdHOo12nQuZlHEmtuXdqGoOD0OhaxopaNFxWzInpEgaLWoVuAMbTzixuosCx2nEG58ngzW3vxdWoxIgdg==
 
 resolve-cwd@^2.0.0:
   version "2.0.0"
@@ -8122,6 +8169,11 @@ timsort@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
   integrity sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
+
+tinycolor2@^1.4.1:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/tinycolor2/-/tinycolor2-1.4.2.tgz#3f6a4d1071ad07676d7fa472e1fac40a719d8803"
+  integrity sha512-vJhccZPs965sV/L2sU4oRQVAos0pQXwsvTLkWYdqJ+a8Q5kPFzJTuOFwy7UniPli44NKQGAglksjvOcpo95aZA==
 
 tmp@0.0.30:
   version "0.0.30"
